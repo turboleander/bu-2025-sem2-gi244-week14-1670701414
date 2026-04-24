@@ -30,6 +30,8 @@ public class ColorPicker : MonoBehaviour
                 }
 
                 newButton.interactable = false;
+
+                //MainManager.GetInstance().TeamColor = SelectedColor;
                 
                 onColorChanged.Invoke(SelectedColor);
             });
